@@ -1,0 +1,29 @@
+feature	input_col	second_input	aggregate_function	fill_value	nice_name
+numTSSEnhGene	numTSSEnhGene	NA	max	0	# TSSs between E and P
+distanceToTSS	distance	NA	max	NA	Distance to TSS
+activity_enh	activity_base	NA	mean	0	DNase x H3K27ac signal at E
+3DContact	hic_contact_pl_scaled_adj		mean	0	Contact frequency (ENCODE Hi-C)
+activity_enh_squared	activity_base	activity_base	mean	0	(DNase x H3K27ac signal at E)^2
+3DContact_squared	hic_contact_pl_scaled_adj	hic_contact_pl_scaled_adj	mean	0	(Contact frequency (ENCODE Hi-C))^2
+activity_prom	TargetGenePromoterActivityQuantile	NA	mean	0	DNase x H3K27ac signal at P (quantile)
+ABCNumerator	ABC.Numerator	NA	sum	0	ABC_A=DNase-seq x H3K27ac, C=ENCODE Hi-C numerator
+ABCScore	ABC.Score	NA	sum	0	ABC_A=DNase-seq x H3K27ac, C=ENCODE Hi-C score
+ABCDenominator	ABC.Denominator	NA	sum	mean	ABC_A=DNase-seq x H3K27ac, C=ENCODE Hi-C denominator
+numCandidateEnhGene	numCandidateEnhGene	NA	max	0	# peaks between E and P
+numNearbyEnhancers	numNearbyEnhancers	NA	max	0	# peaks within 5Kb of E
+sumNearbyEnhancers	sumNearbyEnhancers	NA	max	0	Activity of other peaks within 5Kb of E
+ubiquitousExpressedGene	is_ubiquitous_uniform	NA	max	0	Ubiquitous expression
+P2PromoterClass	P2PromoterClass	NA	max	0	Promoter class (Bergman et al. 2022)
+normalizedDNase_enh	normalized_dhs_enh	NA	mean	0	DNase signal at E
+normalizedDNase_prom	normalized_dhs_prom	NA	mean	0	DNase signal at P
+normalizedH3K27ac_enh	normalized_h3k27ac_enh	NA	mean	0	H3K27ac signal at E
+normalizedH3K27ac_prom	normalized_h3k27ac_prom	NA	mean	0	H3K27ac signal at P
+MPRALegNet_log2(RNA/DNA)	MPRALegNet_log2(RNA/DNA)	NA	mean	0	MPRALegNet predicted log2(RNA/DNA)
+Sei_CTCF	Sei_CTCF	NA	mean	0	Sei predicted CTCF
+Sei_DNase	Sei_DNase	NA	mean	0	Sei predicted DNase
+Sei_EP300	Sei_EP300	NA	mean	0	Sei predicted EP300
+Sei_H3K27ac	Sei_H3K27ac	NA	mean	0	Sei predicted H3K27ac
+Sei_H3K4me1	Sei_H3K4me1	NA	mean	0	Sei predicted H3K4me1
+Sei_H3K4me2	Sei_H3K4me2	NA	mean	0	Sei predicted H3K4me2
+Sei_H3K4me3	Sei_H3K4me3	NA	mean	0	Sei predicted H3K4me3
+Sei_POLR2A	Sei_POLR2A	NA	mean	0	Sei predicted Sei_POLR2A
