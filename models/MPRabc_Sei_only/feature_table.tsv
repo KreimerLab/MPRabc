@@ -1,0 +1,28 @@
+feature	input_col	second_input	aggregate_function	fill_value	nice_name
+numTSSEnhGene	numTSSEnhGene	""	max	0	# TSSs between E and P
+distanceToTSS	distance	""	max	""	Distance to TSS
+activity_prom	TargetGenePromoterActivityQuantile	""	mean	0	DNase x H3K27ac signal at P (quantile)
+3DContact	hic_contact_pl_scaled_adj	""	mean	0	Contact frequency (ENCODE Hi-C)
+sumNearbyEnhancers	sumNearbyEnhancers	""	max	0	Activity of other peaks within 5Kb of E
+ubiquitousExpressedGene	is_ubiquitous_uniform	""	max	0	Ubiquitous expression
+numCandidateEnhGene	numCandidateEnhGene	""	max	0	# peaks between E and P
+ABCScore	ABC.Score	""	sum	0	ABC_A=DNase-seq x H3K27ac, C=ENCODE Hi-C score
+activity_enh	activity_base	""	mean	0	DNase x H3K27ac signal at E
+activity_enh_squared	activity_base	activity_base	mean	0	(DNase x H3K27ac signal at E)^2
+3DContact_squared	hic_contact_pl_scaled_adj	hic_contact_pl_scaled_adj	mean	0	(Contact frequency (ENCODE Hi-C))^2
+ABCNumerator	ABC.Numerator	""	sum	0	ABC_A=DNase-seq x H3K27ac, C=ENCODE Hi-C numerator
+ABCDenominator	ABC.Denominator	""	sum	mean	ABC_A=DNase-seq x H3K27ac, C=ENCODE Hi-C denominator
+numNearbyEnhancers	numNearbyEnhancers	""	max	0	# peaks within 5Kb of E
+P2PromoterClass	P2PromoterClass	""	max	0	Promoter class (Bergman et al. 2022)
+normalizedDNase_enh	normalized_dhs_enh	""	mean	0	DNase signal at E
+normalizedDNase_prom	normalized_dhs_prom	""	mean	0	DNase signal at P
+normalizedH3K27ac_enh	normalized_h3k27ac_enh	""	mean	0	H3K27ac signal at E
+normalizedH3K27ac_prom	normalized_h3k27ac_prom	""	mean	0	H3K27ac signal at P
+Sei_DNase	Sei_DNase	""	mean	0	Sei predicted DNase
+Sei_H3K27ac	Sei_H3K27ac	""	mean	0	Sei predicted H3K27ac
+Sei_CTCF	Sei_CTCF	""	mean	0	Sei predicted CTCF
+Sei_EP300	Sei_EP300	""	mean	0	Sei predicted EP300
+Sei_H3K4me1	Sei_H3K4me1	""	mean	0	Sei predicted H3K4me1
+Sei_H3K4me2	Sei_H3K4me2	""	mean	0	Sei predicted H3K4me2
+Sei_H3K4me3	Sei_H3K4me3	""	mean	0	Sei predicted H3K4me3
+Sei_POLR2A	Sei_POLR2A	""	mean	0	Sei predicted Sei_POLR2A
